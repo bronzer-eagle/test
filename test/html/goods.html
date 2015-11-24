@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div class="return">
+    <a href="../index.html"></a>
+</div>
+<table>
+    <tr class="head">
+        <td>Код товара</td>
+        <td>Название</td>
+        <td>Количество</td>
+        <td>Цена</td>
+        <td>Списать</td>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td onclick="getInform('first')">Кресло</td>
+        <td>34</td>
+        <td>20$</td>
+        <td onclick="changeInf('first')"><img class="pencil" src="../img/pencil.png"></td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td onclick="getInform('second')">Лампа</td>
+        <td>28</td>
+        <td>15$</td>
+        <td onclick="changeInf('second')"><img class="pencil" src="../img/pencil.png"></td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td onclick="getInform('third')">Диван</td>
+        <td>10</td>
+        <td>200$</td>
+        <td onclick="changeInf('third')"><img class="pencil" src="../img/pencil.png"></td>
+    </tr>
+
+</table>
+
+<div id="openModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Закрыть" class="close">X</a>
+
+        <div id="modalInform">
+
+        </div>
+    </div>
+</div>
+
+
+<script rel="script" src="../js/main.js"></script>
+
+</body>
+</html>

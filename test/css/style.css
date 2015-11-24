@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #fdf022;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    width: 300px;
+    font-size: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: margin .5s ease, transform .5s ease, box-shadow .5s ease, border-bottom .5s ease, background 2s ease;
+    background: #37373a;
+    border-bottom: 1px solid #000000;
+}
+
+li:hover {
+    margin: 20px 0;
+    transform: scale(1.1);
+    box-shadow: 0 0 3px 1px #b5a818;
+    border-bottom: none;
+    background: #1c1c1f;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px #1c1c1f;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.icon {
+    position: relative;
+    top: 4px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    /*border: 1px solid #000000;*/
+}
+
+.RP {
+    background: url("../img/sprite.png") -143px -6px;
+}
+
+.goods {
+    background: url("../img/sprite.png") -278px 95px;
+}
+
+.budget {
+    background: url("../img/sprite.png") -6px -40px;
+}
+
+.reports {
+    background: url("../img/sprite.png") -109px -109px;
+}
+
+.common {
+    background: url("../img/sprite.png") -75px -6px;
+}
+
+.control {
+    background: url("../img/sprite.png") -347px -143px;
+}
+
+.return {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #37373a url("../img/arrow.png") no-repeat 21px;
+    background-size: 50%;
+    box-shadow: 0 0 3px 1px #b5a818;
+    transition: margin .5s ease, transform 1s ease, box-shadow .5s ease, border-bottom .5s ease, background 2s ease;
+}
+
+.return:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 3px 1px #b5a818;
+    border-bottom: none;
+}
+
+table {
+    /* border: 1px solid #000000;*/
+    border-spacing: 0 20px;
+}
+
+td {
+    border: 1px solid #000000;
+    padding: 10px 25px;
+    font-size: 26px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+
+.head td {
+    background: #37373a;
+    color: #ffffff;
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    display: none;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    display: block;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 600px;
+    height: auto;
+    position: relative;
+    margin: 5% auto;
+    padding: 5px 20px 13px 20px;
+    background: #37373a;
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    position: absolute;
+    right: 10px;
+    text-align: center;
+    top: 10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    height: 0;
+    transition: color 1s ease;
+    text-shadow: none;
+}
+
+.close:hover {
+    color: #000000;
+}
+
+td > a {
+    color: #000000;
+    text-shadow: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -78px;
+    margin-top: -15px;
+}
+
+.hvr {
+    transition: background 1s ease;
+}
+
+.hvr:hover {
+    background: #b5a818;
+}
+
+.inf {
+    color: #ffffff;
+}
+
+#modalInform {
+    width: 500px;
+    height: 100%;
+}
+
+.pencil {
+    width: 40px;
+    height: 40px;
+}
+
+tr > td:last-child {
+    cursor: pointer;
+    transition: background 1s ease;
+}
+
+tr > td:last-child:hover {
+    background: #b5a818;
+}
+
+.head > td:last-child {
+    cursor: auto;
+}
+
+.head > td:last-child:hover {
+    background: #37373a;
+}
+
+input[type='text'] {
+    background: #b5a818;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+input[type='submit'] {
+    background: #b5a818;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+input[type='submit']:active {
+    background: #968918;
+}
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
